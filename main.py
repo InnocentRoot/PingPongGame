@@ -17,6 +17,10 @@ pygame.init()
 
 clock = pygame.time.Clock()
 
+# Set icon
+icon = pygame.image.load('images/icon.png')
+pygame.display.set_icon(icon)
+
 # Create main window
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption(GAME_TITLE)

@@ -28,9 +28,6 @@ class Menu:
         self.main_menu_theme.background_color = (171, 183, 183)
         self.main_menu_theme.selection_color = BLUE
 
-        icon = pygame.image.load('images/icon.png')
-        pygame.display.set_icon(icon)
-
         self.start = start  # Function to start the main game
         self.menu = None
 
