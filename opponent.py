@@ -1,5 +1,6 @@
 import pygame
 from settings import (LIGHT_GREY, WINDOW_HEIGHT)
+from utils import debug
 
 
 class Opponent(pygame.sprite.Sprite):
@@ -19,7 +20,8 @@ class Opponent(pygame.sprite.Sprite):
         #     self.velocity = 7
         # else:
         #     self.velocity = 5
-        self.velocity = 7 * game.config.get_difficulty()
+        self.velocity = 7 + game.config.get_difficulty()
+        debug(f'Opponent velocity set to {self.velocity}')
 
         self.score = 0
 

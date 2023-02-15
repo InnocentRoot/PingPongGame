@@ -9,7 +9,7 @@ from settings import (
     VOLUME_LEVEL,
     FPS
 )
-from utils import debug, load_image
+from utils import debug
 
 
 class Menu:
@@ -28,11 +28,11 @@ class Menu:
         self.main_menu_theme.background_color = (171, 183, 183)
         self.main_menu_theme.selection_color = BLUE
 
+        icon = pygame.image.load('images/icon.png')
+        pygame.display.set_icon(icon)
+
         self.start = start  # Function to start the main game
         self.menu = None
-        self.background_image = pygame_menu.BaseImage(
-            image_path=load_image("wallpaper.jpg")
-        )
 
     def play_change_sound(self):
         change = pygame.mixer.Sound("sounds/change.mp3")

@@ -28,7 +28,7 @@ class Ball(pygame.sprite.Sprite):
 
         pygame.draw.ellipse(self.image, color, [0, 0, width, height])
 
-        self.velocity_x = randint(4, 8)
+        self.velocity_x = randint(8, 8)
         self.velocity_y = randint(-8, 8)
 
         debug(f"ball velocity:"

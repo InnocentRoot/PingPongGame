@@ -28,7 +28,7 @@ class Config:
         elif self.difficulty == 2:
             return 'Hard'
         else:
-            return 'Impossible'
+            return 'Expert'
 
     def get_player_name(self):
         return self.player_name
