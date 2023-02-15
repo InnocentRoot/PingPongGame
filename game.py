@@ -17,7 +17,6 @@ from settings import (
     RED,
     BLUE,
     GREEN,
-    YELLOW,
     PADDLE_WIDTH,
     PADDLE_HEIGHT,
     FONT_SIZE,
@@ -125,20 +124,20 @@ class Game:
             elapsed_seconds = (pygame.time.get_ticks() - self.start_time)/1000
 
             if elapsed_seconds < 1:
-                timer = self.font_timer.render('3...', 1, YELLOW)
+                timer = self.font_timer.render('3...', 1, BLUE)
                 self.screen.blit(timer,
                                  (WINDOW_WIDTH/2 - timer.get_width()/2,
                                   WINDOW_HEIGHT/2 - 200)
                                  )
 
             elif 1 < elapsed_seconds < 2:
-                timer = self.font_timer.render('2...', 1, YELLOW)
+                timer = self.font_timer.render('2...', 1, BLUE)
                 self.screen.blit(timer,
                                  (WINDOW_WIDTH/2 - timer.get_width()/2 + 30,
                                   WINDOW_HEIGHT/2 - 200)
                                  )
             elif 2 < elapsed_seconds < 3:
-                timer = self.font_timer.render('1...', 1, YELLOW)
+                timer = self.font_timer.render('1...', 1, BLUE)
                 self.screen.blit(timer,
                                  (WINDOW_WIDTH/2 - timer.get_width()/2 + 40,
                                   WINDOW_HEIGHT/2 - 200))
