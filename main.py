@@ -26,6 +26,7 @@ screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption(GAME_TITLE)
 
 # We want to play some background music
+pygame.mixer.init()
 pygame.mixer.music.load(path.join("sounds", "background-loop.mp3"))
 pygame.mixer.music.set_volume(BACKGROUND_VOLUME_LEVEL)
 pygame.mixer.music.play(loops=-1)
